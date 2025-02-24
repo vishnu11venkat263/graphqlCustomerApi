@@ -1,0 +1,29 @@
+{
+  getCustomerSpending(customerId: "63f8b3d5a7b1d7f3b0a2c5e1") {
+    customerId
+    totalSpent
+    averageOrderValue
+    lastOrderDate
+  }
+}
+
+
+{
+  getTopSellingProducts(limit: 2) {
+    productId
+    name
+    totalSold
+  }
+}
+
+
+{
+  getSalesAnalytics(startDate: "2024-02-01", endDate: "2024-02-20") {
+    totalRevenue
+    completedOrders
+    categoryBreakdown {
+      category
+      revenue
+    }
+  }
+}
